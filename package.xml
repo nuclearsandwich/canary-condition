@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>canary_condition</name>
-  <version>0.7.0</version>
+  <version>0.7.1</version>
   <description>Canary package to test conditional dependencies.</description>
   <maintainer email="steven@openrobotics.org">Steven! Ragnarök</maintainer>
   <license>Apache License 2.0</license>
@@ -10,8 +10,8 @@
 
   <depend condition="$ROS_VERSION == 2">ament_cmake</depend>
   <depend condition="$ROS_VERSION == 1">catkin</depend>
-  <depend condition="$ROS_PYTHON_VERSION == 3">python3-catkin-pkg-modules</depend>
-  <depend condition="$ROS_PYTHON_VERSION == 2">python-catkin-pkg-modules</depend>
+  <depend condition="$ROS_PYTHON_VERSION == 3">python3-catkin-pkg</depend>
+  <depend condition="$ROS_PYTHON_VERSION == 2">python-catkin-pkg</depend>
 
   <export>
     <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
